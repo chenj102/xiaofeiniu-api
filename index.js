@@ -6,6 +6,7 @@ const PORT = 8090;
 const express =require('express');
 const categoryRouter=require('./routes/admin/category');
 const adminRouter=require('./routes/admin/admin');
+const dishRouter=require('./routes/admin/dish');
 const cors=require('cors');
 const bodyParser=require('body-parser')
 
@@ -27,4 +28,5 @@ app.use(bodyParser.json());//把application/json格式的请求主体数据解�
 //挂载路由器
 app.use('/admin/category',categoryRouter);
 app.use('/admin',adminRouter);
+app.use('/admin/dish',dishRouter);
 

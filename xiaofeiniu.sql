@@ -47,7 +47,6 @@ INSERT INTO xfn_table VALUES
 (12, '福满堂', '12人桌', 1),
 (13, '高升阁', '4人桌', 3),
 (15, '乐逍遥', '2人桌',3);
-*-
 
 /*桌台预定信息*/
 CREATE TABLE xfn_reservation(
